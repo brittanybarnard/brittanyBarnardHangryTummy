@@ -76,6 +76,14 @@ button:focus {
 
 /* landing page styles */
 
+.hamburgerMenuIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
 .navList {
     height: 14vh;
     display: flex;
@@ -283,4 +291,25 @@ form {
 .copyright a:hover,
 .copyright:focus {
     text-decoration: underline;
+}
+
+/* media queries */
+
+@media (max-width:499px) {
+    .navList {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 55px;
+        right: 20px;
+    }
+    .navList.toggleCls {
+        display: block;
+    }
+}
+
+@media (min-width:500px) {
+    .hamburgerMenuIcon {
+        display: none;
+    }
 }
