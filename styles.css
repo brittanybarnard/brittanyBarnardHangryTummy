@@ -77,15 +77,11 @@ button:focus {
 
 /* landing page styles */
 
-.landingPage {
-    height: 100vh;
-}
-
 .hamburgerMenuIcon {
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 3rem;
+    font-size: 4rem;
     cursor: pointer;
 }
 
@@ -113,38 +109,32 @@ button:focus {
     border-bottom: 3px solid #E75605;
 }
 
+.headerFlexContainer {
+    display: flex;
+}
+
 .headerImage {
-    background-image: url(./assets/header-burger.png);
-    height: 86vh;
     width: 50%;
-    background-size: cover;
-    float: left;
+    display: block;
 }
 
 .headerInfo {
-    margin-top: 200px;
-    margin-bottom: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    background-color: transparent;
     font-weight: 400;
     line-height: 120px;
     font-size: 10.64rem;
-    margin: 0 0 0 15px;
-    float: left;
-    width: 35%;
-    vertical-align: middle;
-}
-
-.headerSocialMedia {
-    float: right;
-    width: 10%;
+    margin: 0;
 }
 
 .headerSocialMedia li {
-    margin-bottom: 10px;
+    margin: 0 auto 10px 0;
 }
 
 /* blog styles */
@@ -406,3 +396,5 @@ form {
         display: none;
     }
 }
+
+
